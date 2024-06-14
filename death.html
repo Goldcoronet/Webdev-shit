@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/whitedeath.png">
+        <link rel="stylesheet" href="style.css">
+        <title>death</title>
+    </head>
+    <body>
+        <h3 id="greetings">I know where you live</h3>
+        <a href="https://youtu.be/BI9fKfX5V68?si=ExxOQAmsTi8ujUHn"
+        target="_blank">
+        <img id="bye" src="images/pig_god.jpg"
+        alt="puny human."
+        height="400" width="1000">
+        </a>
+        <br>
+
+        <label for="bday"> Enter your birthday</label>
+        <input type="date" id="bday">
+        <button onclick="dosomething()" style="font-size: 12px; background-color: slategray; color: whitesmoke; border-radius: 12px;" >submit</button>
+
+        <script>
+            function dosomething(){
+                document.getElementById("greetings").innerHTML="you 143 days left to live.";
+                document.getElementById("bye").src="images/deadpig.jpeg";
+            }
+        </script>
+        <audio autoplay loop>
+        <source src="songs/Cry Of The Unheard.mp3">
+        </audio>
+    </body>
+</html>
