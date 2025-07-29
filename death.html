@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="icon" type="image/png" href="images/whitedeath.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="death_style.css">
         <title>death</title>
     </head>
     <body>
@@ -19,14 +19,21 @@
         <input type="date" id="bday">
         <button onclick="dosomething()" style="font-size: 12px; background-color: slategray; color: whitesmoke; border-radius: 12px;" >submit</button>
 
-        <script>
-            function dosomething(){
-                document.getElementById("greetings").innerHTML="you 143 days left to live.";
-                document.getElementById("bye").src="images/deadpig.jpeg";
-            }
-        </script>
-        <audio autoplay loop>
-        <source src="songs/Cry Of The Unheard.mp3">
+        <audio id="myAudio" loop>
+            <source src="songs/Cry Of The Unheard.mp3">
         </audio>
+
+        <script>
+            const min = 1;
+            const max = 1000;
+            function dosomething(){
+                const bday = document.getElementById("bday").value;
+                if (bday !== ""){
+                let x = Math.floor(Math.random()*max)+min;
+                document.getElementById("greetings").innerHTML=`you ${x} days left to live.`;
+                document.getElementById("bye").src="images/deadpig.jpeg";
+                document.getElementById("myAudio").play();
+            }}
+        </script>
     </body>
 </html>

@@ -1,7 +1,25 @@
+@font-face {
+    src: url(fonts/Spider-Man.otf);
+    font-family: spooderman;
+}
+
 body{
     background-image: url(images/spider_background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    color: aliceblue;
+}
+
+#spider{
+    font-family: spooderman;
+    font-size: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#subtext{
+    margin-left: 35px;
+    margin-top: 0px;
 }

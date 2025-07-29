@@ -1,0 +1,27 @@
+@font-face {
+    src: url(fonts/Bold\ Marker.otf);
+    font-family: Bold_Marker;
+}
+
+body{
+    background-color: aliceblue;
+    color: black;
+}
+
+.block{
+    background-color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#t1{
+    color: aliceblue;
+    font-family: Bold_Marker;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 3px 3px 0px grey;
+}
+
+#t2{
+    font-size: 2em;
+}

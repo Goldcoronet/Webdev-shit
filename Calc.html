@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="icon" type="image/jpg" href="c:\random-coding-shit\html\images\calc.jpg">
+        <link rel="stylesheet" href="Calc.css">
+    </head>
+    <body>
+        <div id="whole">
+        <h1>Calculator</h1>
+        <h2>This is a calculator. Please enter two numbers below and click "Calculate"</h2><br>
+        <div id="myDiv"></div><input type ="tel"> + <input type ="tel"> <button onclick="doSomething()">Calculate</button>
+        <audio id="music" src="\songs\Ryan.mpeg"></audio>
+        <div class="image-container">
+        <img src="\images\Ryan.jpeg" id="img">
+        </div>
+        </div>
+        <script>
+            function doSomething(){
+                var myDiv = document.getElementById('myDiv');
+                myDiv.style.display = 'block';
+                var audio = document.getElementById('music');
+                audio.play();
+
+                setTimeout(function() {
+                myDiv.style.display = 'none';
+                img.style.display = 'block';
+            },3000);
+            }
+        </script>
+    </body>
+</html>
