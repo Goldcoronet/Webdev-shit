@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="c:\random-coding-shit\html\images\Sun_kill.jpg">
+    <link rel="stylesheet" href="convert.css">
+    <title>A fuking converter thingy</title>
+</head>
+<body>
+    <form>
+        <h1>Temperature conversion:</h1>
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius -> Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit -> Celsius</label><br>
+
+        <button type="button" onclick="convert()">submit</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="convert.js"></script>
+</body>
+</html>
